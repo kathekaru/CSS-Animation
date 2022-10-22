@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Code+Pro:wght@300&display=swap');
+
+body { 
+    background-color: gray;
+}
+
+.header h2 { 
+    border: 1px solid darkred;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3.5rem;
+    width: 50%;
+    margin: 32px auto;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 100px;}
+}
+
+.ingredients-table { 
+   border: 1px solid darkred;
+   margin: 2rem;
+   font-family: 'Source Code Pro', monospace;
+   color: azure;
+   width: 30%;
+   animation: ingredients-table;
+   animation-duration: 4s;
+   position: relative;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes ingredients-table {
+    0% {left: -1000px}
+    85% {left: 50px; }
+    100% {left: 0}
+}
+
+.ingredients-img { 
+    width: 20%;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.Instructions { 
+border: 1px solid darkred;
+font-family: 'Source Code Pro', monospace;
+width: 50%;
+    margin: 2rem;
+    color: azure;
+}
+
+.footer { 
+width: 50%;
+color: azure;
+margin: 2rem;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+position: relative;
+animation-name: footer;
+animation-duration: 4s;
+animation-direction: reverse;
+}
+
+@keyframes footer {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
